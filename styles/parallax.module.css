@@ -1,0 +1,44 @@
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 100px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.parallax {
+    position: absolute;
+    min-height: 130vh;
+    width: 100%;
+    object-fit: cover;
+}
+.parallax:first-child {
+    transform: translateZ(calc(-100px * 2.5)) scale(calc(1.05 + 2.5));
+}
+.parallax:nth-child(2) {
+    transform: translateZ(calc(-100px * 2)) scale(calc(1.05 + 2));
+}
+.parallax:nth-child(3) {
+    transform: translateZ(calc(-100px * 1.5)) scale(calc(1.05 + 1.5));
+    display: flex;
+    justify-content: center;
+    transform: translateY(25vw);
+}
+.parallax:nth-child(4) {
+    transform: translateZ(calc(-100px * 1)) scale(calc(1.05 + 1));
+}
+.parallax:nth-child(5) {
+    transform: translateZ(calc(-100px * 0.5)) scale(calc(1.05 + 0.5));
+}
+.parallax:last-child {
+    transform: translateZ(calc(-100px * 0)) scale(calc(1.05 + 0));
+}

@@ -5,10 +5,11 @@ export default function RootLayout({ children }) {
     return (
       <html lang="en">
         <head />
-        <body>
-            <nav className='flex py-3 bg-slate-600'>
-                <NavLink href="/" className='ml-3 mr-auto font-semibold px-3 py-1 rounded  transition duration-300 ease-linear' >Home</NavLink>
-                <NavLink href="/About" className="mr-8 font-semibold px-3 py-1 rounded  transition duration-300 ease-linear" >About</NavLink>
+        <body className='relative z-0'>
+            <nav className='flex py-3 fixed z-10 w-full'>
+                <NavLink href="/" className="ml-3 mr-auto" >Home</NavLink>
+                <NavLink href="/About" >About</NavLink>
+                <NavLink href="/Contact" className="mr-6 ml-3" >Contact</NavLink>
             </nav>
             {children}
         </body>
