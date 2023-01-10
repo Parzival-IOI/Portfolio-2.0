@@ -4,7 +4,6 @@
     overflow-y: auto;
     perspective: 100px;
 }
-
 .container {
     position: relative;
     display: flex;
@@ -13,6 +12,7 @@
     height: 100%;
     width: 100%;
     transform-style: preserve-3d;
+    z-index: -1;
 }
 
 .parallax {
@@ -26,18 +26,19 @@
 }
 .parallax:nth-child(2) {
     transform: translateZ(calc(-100px * 2)) scale(calc(1.05 + 2));
+    /* mix-blend-mode: screen; */
 }
 .parallax:nth-child(3) {
-    transform: translateZ(calc(-100px * 1.5)) scale(calc(1.05 + 1.5));
+    transform: translateZ(calc(-100px * 1.5)) scale(calc(1.05 + 1.5)) translateY(25vw);
     display: flex;
     justify-content: center;
-    transform: translateY(25vw);
 }
 .parallax:nth-child(4) {
     transform: translateZ(calc(-100px * 1)) scale(calc(1.05 + 1));
 }
 .parallax:nth-child(5) {
     transform: translateZ(calc(-100px * 0.5)) scale(calc(1.05 + 0.5));
+    /* mix-blend-mode: screen; */
 }
 .parallax:last-child {
     transform: translateZ(calc(-100px * 0)) scale(calc(1.05 + 0));
