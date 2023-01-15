@@ -22,10 +22,10 @@
     object-fit: cover;
 }
 .parallax:first-child {
-    transform: translateZ(calc(-100px * 2.5)) scale(calc(1.05 + 2.5));
+    transform: translateZ(calc(-100px * 2.5)) scale(calc(1.1 + 2.5));
 }
 .parallax:nth-child(2) {
-    transform: translateZ(calc(-100px * 2)) scale(calc(1.05 + 2));
+    transform: translateZ(calc(-100px * 2)) scale(calc(1.1 + 2));
     /* mix-blend-mode: screen; */
 }
 .parallax:nth-child(3) {
