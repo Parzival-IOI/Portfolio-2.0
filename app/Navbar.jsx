@@ -40,8 +40,11 @@ function Navbar() {
         setIsOpen(false);
     }
 
-    if(isOpen) document.body.style.overflow = 'hidden';
-    else document.body.style.overflow = 'scroll';
+    function setDefault() {
+        if(isOpen) document.body.style.overflow = 'hidden';
+        else document.body.style.overflow = 'scroll';
+    }
+    setDefault();
 
     // if(isOpen) document.main.style.overflow = 'hidden';
     // else document.main.style.overflow = 'scroll';
