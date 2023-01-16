@@ -1,13 +1,14 @@
 "use client";
+
 import {useEffect, useState} from 'react'
 import NavLink from './nav-link';
-import {Rubik} from '@next/font/google'
+// import {Rubik} from '@next/font/google'
 
-const rubik = Rubik({
-  weight: '800',
-  subsets : ['latin'],
-  variable : '--var-rubik',
-});
+// const rubik = Rubik({
+//   weight: '800',
+//   subsets : ['latin'],
+//   variable : '--var-rubik',
+// });
 
 function Navbar() {
     const [position, setPostition] = useState(0);
@@ -52,7 +53,7 @@ function Navbar() {
   return (
     <div>
         <nav className={`flex py-3 z-10 w-full shadow-sm fixed transition-all duration-1000 ${position < 200 ? 'top-0' : 'top-[-15vw]'} ${position <= 0 ? 'bg-transparent' : 'bg-slate-500'}`}>
-            <div className={`${rubik.variable} flex w-full h-full cssFont justify-between`} id='Nav' >
+            <div className={` flex w-full h-full cssFont justify-between`} id='Nav' >
                 <div className="ml-[2%] flex ">
                     <NavLink href="/" onClick={setFalse}>Home</NavLink>
                 </div>

@@ -2,17 +2,17 @@ import Image from 'next/image';
 import par from '../styles/parallax.module.css'
 // import Script from 'next/script';
 
-import {Eater} from '@next/font/google'
+// import {Eater} from '@next/font/google'
 
-const Inter = Eater({
-  weight: '400',
-  subsets : ['latin'],
-  variable : '--var-Eater',
-});
+// const Inter = Eater({
+//   weight: '400',
+//   subsets : ['latin'],
+//   variable : '--var-Eater',
+// });
 
 const Parallax = ({children}) => {
   return (
-      <div className={`${par.wrapper} ${Inter.variable} cssFont2`} id='parallax'>
+      <div className={`${par.wrapper} cssFont2`} id='parallax'>
         <div className={par.container}>
               <Image src={`/BackGround.png`} alt="Loading..." className={par.parallax} width={300} height={300}/>
               <Image src={`/FourthBG.png`} alt="Loading..." className={par.parallax} width={400} height={400}/>
