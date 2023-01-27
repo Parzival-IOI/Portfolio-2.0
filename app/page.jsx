@@ -1,16 +1,16 @@
 import Parallax from "./Parallax"
 import Introduction from "./introduction"
-import Provider from "./Provider"
+// import Provider from "./Provider"
 
-const Page = ({session}) => {
+const Page = () => {
   return (
-    <Provider session={session}>
-      <div>
+    <div>
+        {/*  <Provider session={session}> */}
         <Parallax>
           <Introduction/>
         </Parallax>
+        {/* </Provider> */}
       </div>
-    </Provider>
   )
 }
 

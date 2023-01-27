@@ -10,22 +10,23 @@
 
 // export default introduction
 "use client";
-import { useSession, signIn, signOut } from "next-auth/react"
+// import { useSession, signIn, signOut } from "next-auth/react"
 
 export default function Component() {
-  const { data: session } = useSession()
-  if (session) {
-    return (
-      <>
-        Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()} className="text-red-400">Sign out</button>
-      </>
-    )
-  }
-  return (
-    <div className="text-white">
-      Not signed in <br />
-      <button onClick={() => signIn()} className="text-red-600">Sign in</button>
-    </div>
-  )
+  // const { data: session } = useSession()
+  // if (session) {
+  //   return (
+  //     <>
+  //       Signed in as {session.user.email} <br />
+  //       <button onClick={() => signOut()} className="text-red-400">Sign out</button>
+  //     </>
+  //   )
+  // }
+  // return (
+  //   <div className="text-white">
+  //     Not signed in <br />
+  //     <button onClick={() => signIn()} className="text-red-600">Sign in</button>
+  //   </div>
+  // )
+  return <div>hello</div>
 }
