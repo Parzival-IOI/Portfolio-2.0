@@ -1,7 +1,7 @@
 "use client";
 
 import {useEffect, useState} from 'react'
-import NavLink from './Nav-link';
+import NavLink from './Navlink';
 
 function Navbar() {
     const [position, setPostition] = useState(0);
