@@ -1,8 +1,11 @@
 import React from 'react'
+import Getitem from './Getitem'
 
 const page = () => {
   return (
-    <div>Work</div>
+    <div className='min-h-full'>
+      <Getitem/>
+    </div>
   )
 }
 

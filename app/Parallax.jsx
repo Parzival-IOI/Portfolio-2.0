@@ -1,19 +1,13 @@
+// "use client";
 import Image from 'next/image';
 import par from '../styles/parallax.module.css'
-// import Script from 'next/script';
-
-// import {Eater} from '@next/font/google'
-
-// const Inter = Eater({
-//   weight: '400',
-//   subsets : ['latin'],
-//   variable : '--var-Eater',
-// });
+import Script from 'next/script';
 
 const Parallax = ({children}) => {
+
   return (
-      <div className={`${par.wrapper} cssFont2`} id='parallax'>
-        <div className={par.container}>
+      <div className={`${par.wrapper} cssFont2`} >
+        <section className={par.container}>
               <Image src={`/BackGround.png`} alt="Loading..." className={par.parallax} width={300} height={300}/>
               <Image src={`/FourthBG.png`} alt="Loading..." className={par.parallax} width={400} height={400}/>
               <div className={par.parallax} >
@@ -22,7 +16,10 @@ const Parallax = ({children}) => {
               <Image src={`/ThirdBG.png`} alt="Loading..." className={par.parallax} width={600} height={600}/>
               <Image src={`/SecondBG.png`} alt="Loading..." className={par.parallax} width={800} height={800}/>
               <Image src={`/FirstBG.png`} alt="Loading..." className={par.parallax} width={900} height={900}/>
-        </div>
+              <Script defer>
+                {}
+              </Script>
+        </section>
         <div className='h-[200%] w-full mt-[15vh] bg-slate-900' >{children}</div>
       </div>
   )
