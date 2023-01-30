@@ -13,15 +13,15 @@ const Getitem = async () => {
   const {data} = await item();
 
   return (
-    // <pre>{JSON.stringify(data, null, 2)}</pre>
-    <div className='min-h-full p-2 mt-16'>
-        {data.map((list) => (
-            <p key={list.id}>
-                {list.title}
-            </p>
-        ))}
-        {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-    </div>
+    <pre>{JSON.stringify(data, null, 2)}</pre>
+    // <div className='min-h-full p-2 mt-16'>
+    //     {/* {data.map((list) => (
+    //         <p key={list.id}>
+    //             {list.title}
+    //         </p>
+    //     ))} */}
+    //     {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
+    // </div>
   )
 }
 
