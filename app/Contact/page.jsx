@@ -1,10 +1,17 @@
-import { redirect } from 'next/navigation';
+// import { redirect } from 'next/navigation';
 import React from 'react'
+import Provider from "./Provider"
+import Introduction from "./introduction"
 
-const Contact = () => {
+
+const Contact = ({session}) => {
   // redirect('/About');
   return (
-    <div>Contact</div>
+    <div className='min-h-[200vh] bg-teal-900'>
+      <Provider session={session}>
+        <Introduction/>
+      </Provider>
+    </div>
   )
 }
 
